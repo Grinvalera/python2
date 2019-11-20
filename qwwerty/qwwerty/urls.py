@@ -15,11 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from viber import views
+
 
 urlpatterns = [
-    path('set_webhook/', views.set_webhook),
-    path('unset_webhook/', views.unset_webhook),
     path('admin/', admin.site.urls),
     path('viber/', include('viber.urls')),
     path('user/', include('user.urls')),

@@ -25,7 +25,7 @@ SECRET_KEY = '@45f=h7y&=pyk$-%=ri!*43cf2)!3b@*zsa2ybcjz&kr=ramk5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['d020db61.ngrok.io']
+ALLOWED_HOSTS = ['b1481041.ngrok.io']
 AUTH_USER_MODEL = 'user.UserOne'
 # Application definition
 
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'qwwerty.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -12,6 +12,8 @@ class Userviber(models.Model):
     is_active = models.BooleanField(default=True, null=True)
     is_bloked = models.BooleanField(default=False, null=True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, blank=True)
-    def str(self):
+
+    def __str__(self):
         return f'{self.name} - {self.phone_number}'
+
 # Create your models here.
